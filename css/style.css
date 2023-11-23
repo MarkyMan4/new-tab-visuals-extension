@@ -1,0 +1,7 @@
+#canvas {
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: black;
+    /* background-image: linear-gradient(black, rgb(0, 48, 119), rgb(60, 0, 128), rgb(160, 15, 34), rgb(110, 59, 0)); */
+}
