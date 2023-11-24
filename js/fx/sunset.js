@@ -47,6 +47,8 @@ class Sunset {
         this.ctx.arc(this.moon.x, this.moon.y, this.moon.radius, 0, 2 * Math.PI);
         this.ctx.fillStyle = 'rgb(201, 201, 201)';
         this.ctx.fill();
+        this.ctx.strokeStyle = 'black';
+        this.ctx.stroke();
 
         // draw spots on the moon
         this.ctx.beginPath();
