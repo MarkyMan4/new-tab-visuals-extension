@@ -9,10 +9,15 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// const effect = new Network(canvas, ctx);
-// const effect = new Sunset(canvas, ctx);
-// const effect = new SquareShooter(canvas, ctx);
-const effect = new WaveEffect(canvas, ctx);
+let effect;
+
+// randomly choose an effect
+let randNum = Math.floor(Math.random() * 4);
+
+if(randNum == 0) effect = new Network(canvas, ctx);
+else if(randNum == 1) effect = new Sunset(canvas, ctx);
+else if(randNum == 2) effect = new SquareShooter(canvas, ctx);
+else if(randNum == 3) effect = new WaveEffect(canvas, ctx);
 
 const animate = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
